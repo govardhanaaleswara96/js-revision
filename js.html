@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+// string methods
+
+//startsWith
+var a = 'string method is stored and manipulating text';
+console.log(a.startsWith('string'));
+
+//endsWith
+var a = 'string method is stored and manipulating text';
+console.log(a.endsWith('string'));
+
+//include
+var a = 'string method is stored and manipulating text';
+console.log(a.includes('is'));
+
+//match
+var a = 'string method is stored and manipulating text';
+var b = a.match(/Stored/gi);
+console.log(b);
+
+//split
+var a = 'string method is stored and manipulating text';
+var b = a.split(' ');
+console.log(b);
+
+//toLowerCase
+var a = 'string method is stored and manipulating text';
+var b = a.toLowerCase();
+console.log(b);
+
+//toUpperCase
+var a = 'string method is stored and manipulating text';
+var b = a.toUpperCase();
+console.log(b);
+
+//concat
+var a = 'string method is stored and manipulating text';
+var b = 'string methods'
+var c = a.concat(b);
+console.log(c);
+
+//string length
+var a = 'string method is stored and manipulating text';
+var b = a.length;
+console.log(b);
+//trim
+var a = '   string method is stored and manipulating text   ';
+var b = a.trim();
+console.log(b);
+
+//replace
+var a = 'string method is stored and manipulating text';
+var b = a.replace('string','js String');
+console.log(b);
+
+//valueOf
+var a = '10';
+var b = a.valueOf();
+console.log(b);
+
+//charCodeAt
+var a = 'string method is stored and manipulating text';
+var b = a.charCodeAt(0);
+console.log(b);
+
+//charAt
+var a = 'string method is stored and manipulating text';
+var b = a.charAt(5);
+console.log(b);
+
+// fromCharCode
+var a = String.fromCharCode(115);
+console.log(a);
+
+//slice
+var a = 'string method is stored and manipulating text';
+var b = a.slice(0,6);
+console.log(b);
+
+//substring
+var a = 'string method is stored and manipulating text';
+var b = a.substring(0,6);
+console.log(b);
+
+//substr
+var a = 'string method is stored and manipulating text';
+var b = a.substr(0,6);
+console.log(b);
+
+//indexOf
+var a = 'string method is stored and manipulating text';
+var b = a.indexOf('s');
+console.log(b);
+
+//lastIndexOf
+var a = 'string method is stored and manipulating text';
+var b = a.lastIndexOf('s');
+console.log(b);
+
+//search
+var a = 'string method is stored and manipulating text';
+var b = a.search('t');
+console.log(b);
+
+// array methods
+
+//concat
+var a = ['array'];
+var b = ['method'];
+console.log(a.concat(b));
+
+//copyWith
+var a = ['string', 'method', 'is', 'stored', 'and', 'manipulating', 'text'];
+var b = a.copyWithin(2,0);
+console.log(b);
+
+//every
+var a = [10,10,10,10];
+var b =a.every((abc)=> abc == 10);
+console.log(b);
+
+//some
+var a = [10,20,30,40];
+var b = a.some((abc)=> abc == 10);
+console.log(b);
+
+//forEach
+var a = [10,20,30,40];
+function myFunction(item,index){
+    console.log(item,index)
+}
+a.forEach(myFunction);
+
+//fill
+var a =['html','css','js'];
+console.log(a.fill('type script'));
+
+//filter
+var a = [10,20,30,40];
+var b =a.filter((abc)=> abc!= 10);
+console.log(b);
+
+//map
+var a = [10,20,30,40];
+var b =a.map((abc)=> abc!= 10);
+console.log(b);
+
+//find
+var a = ['javascript','bootstrap','angler js'];
+var b = a.find((abc)=> abc == 'bootstrap');
+console.log(b);
+
+//findIndex
+var a = ['javascript','bootstrap','angler js'];
+var b = a.findIndex((abc)=> abc == 'bootstrap');
+console.log(b);
+
+
+//indexOf
+var a = ['javascript','bootstrap','angler js'];
+var b = a.indexOf('bootstrap');
+console.log(b);
+
+//lastIndexOf
+var a = ['javascript','bootstrap','angler js','bootstrap'];
+var b = a.lastIndexOf('bootstrap');
+console.log(b);
+
+//isArray
+var a = ['javascript'];
+var b = Array.isArray(a);
+console.log(b);
+
+//toString
+var a = ['javascript','script','languages'];
+console.log(a.toString());
+
+//join
+var a = ['javascript','typescript'];
+var b = a.join(' and ');
+console.log(b);
+
+//shift
+var a = ['js','ts','bootstrap'];
+var b = a.shift();
+console.log(a);
+
+//pop
+var a = ['js','ts','bootstrap'];
+var b = a.pop();
+console.log(a);
+
+//unshift
+var a = ['js','ts','bootstrap'];
+var b = a.unshift('angler js');
+console.log(a);
+
+//push
+var a = ['js','ts','bootstrap'];
+var b = a.push('angler js');
+console.log(a);
+
+
+//splice
+var a = ['js','ts','bootstrap'];
+var b = a.splice(1,0,'angler js');
+console.log(a);
+
+//reduce
+var a = [10,10,10,10];
+var b =a.reduce((s,p)=> s+p);
+console.log(b);
+
+//reduceRight
+var a = [10,10,10,10];
+var b =a.reduceRight((s,p)=> s+p);
+console.log(b);
+
+//reverse
+var a = ['javascript', 'is', 'core', 'languages','javascript'];
+console.log(a.reverse());
+
+//slice
+var a = ['javascript','is', 'a' ,'core', 'languages'];
+var b =a.slice(0,3);
+console.log(b);
+
+//sort
+var a = [10,50,40,30,20];
+console.log(a.sort());
+
+//object
+var laptop ={
+    name:'Dell',
+    ram:'8gb',
+    processor:'i5'
+    }
+    // access properties
+  console.log(laptop.name);
+  console.log('name: ' +laptop.name + ' ram: ' +laptop.ram);
+  console.log('name: ' +laptop['name'] +' ram: ' + laptop['ram']);
+
+  // add properties
+  laptop.storage = '1000TB';
+  console.log(laptop.storage);
+
+  // delete properties
+  delete laptop.processor
+  console.log(laptop.processor);
+
+  //dynamic properties
+  var memory = 'name';
+  console.log('name: ' + laptop[memory]);
+
+//function THIS in object
+var laptop ={
+    name:'Dell',
+    ram:'8gb',
+    processor:'i5',
+    overView:function(){
+        return this.name + ' ' + this.processor;
+    }
+    }
+  console.log(laptop.overView());
+
+//constructor
+ function Code(front,back,server) {
+    this.frontEnd = front;
+    this.backEnd = back;
+    this.serverSide = server;
+    }
+     // object
+   var project =new Code('javascript','java','node js');
+   
+   //access properties
+
+   console.log(project.frontEnd);
+   console.log(project.backEnd);
+
+   //adding properties in object
+
+   project.database = 'sql server';
+   console.log(project.database);
+   
+   // adding function in object
+   project.gitHub = function(){
+       return this.frontEnd +' '+ this.backEnd;
+   }
+   console.log(project.gitHub());
+
+   // adding properties in constructor
+   function Code(front,back,server) {
+    this.frontEnd = front;
+    this.backEnd = back;
+    this.serverSide = server;
+    this.dataBase = 'mango Dp';
+    this.tester = function(){
+        return this.frontEnd +' '+ this.serverSide;
+    }
+    }
+     // object
+   var project =new Code('javascript','java','node js');
+
+    // adding properties in constructor
+    console.log(project.dataBase);
+
+    // accessing function in constructor
+    console.log(project.tester());
+
+// prototype
+function Biriyani(veg,nonveg,both) {
+    this.hotelOne = veg;
+    this.hotelTwo = nonveg;
+    this.hotelThree = both;
+    }
+    // prototype access property
+    Biriyani.prototype.hotelFour ='chiness food';
+
+    //prototype access function
+    Biriyani.prototype.nonVeg = function(){
+        return this.hotelTwo +' '+ this.hotelThree;
+    }
+     // object
+   var zomato =new Biriyani('chiken','mutton','egges');
+
+    // adding properties in constructor
+    console.log(zomato.hotelFour);
+
+    // accessing function in constructor
+    console.log(zomato.nonVeg()); 
+
+</script>
+</head>
+<body>
+</body>
+</html>
